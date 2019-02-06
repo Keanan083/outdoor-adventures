@@ -26,6 +26,7 @@ header {
             border: 1px solid;
             border-color: white;
             height: 2rem;
+            position: sticky;
         }
 
         li {
@@ -71,16 +72,21 @@ header {
 }
 
 .intro {
-   padding: 2rem 5rem 0 5rem;
+   padding: 2rem 5rem 2rem 5rem;
 }
 
+.f-intro {
+    padding-bottom: 5rem;
+} 
+
+
 .hiking {
+    padding-bottom: 5rem;
     &-img {
         background: url(../images/hiking.jpg);
         background-size: 100%;
-    }
-    &-article {
-        background-color: grey;
+        padding-bottom: 15rem;
+        border-radius: 3%;
     }
 }
 
@@ -88,9 +94,8 @@ header {
     &-img {
         background: url(../images/canoeing.jpg);
         background-size: 100%;
-    }
-    &-article {
-        background-color: grey;
+        padding-bottom: 15rem;
+        border-radius: 3%;
     }
 }
 
@@ -98,18 +103,36 @@ header {
     &-img {
         background: url(../images/camping.jpeg);
         background-size: 100%;
-    }
-    &-article {
-        background-color: grey;
+        padding-bottom: 15rem;
+        border-radius: 3%;
     }
 }
 
 .climbing {
     &-img {
-        background: url(../images/climbing.jpeg);
+        background: url(../images/rock-climbing.jpg);
         background-size: 100%;
-    }
-    &-article {
-        background-color: grey;
+        padding-bottom: 15rem;
+        border-radius: 3%;
     }
 }
+
+.fishing {
+    &-img {
+        background: url(../images/fishing.jpg);
+        background-size: 100%;
+        padding-bottom: 15rem;
+        border-radius: 3%;
+    }
+}
+
+.hunting {
+    &-img {
+        background: url(../images/hunting.jpg);
+        padding-bottom: 15rem;
+        background-size: 100%;
+        border-radius: 3%;
+    } 
+}
+
+// contact page styling

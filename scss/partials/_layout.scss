@@ -3,14 +3,17 @@
     width: 100%;
     margin: 0 auto;
 
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
     grid-gap: 1rem;
 
     grid-template-areas:
-    "hiking hiking hiking"
-    "canoeing canoeing canoeing"
-    "camping camping camping"
+    "hiking"
+    "canoeing"
+    "camping"
+    "climbing"
+    "fishing"
+    "hunting"
 }
 
 .hiking {
@@ -73,5 +76,64 @@
 
     &-article {
         grid-area: camping-article;
+    }
+}
+
+.climbing {
+    grid-area: climbing;
+    display: grid;
+    margin: 0 auto;
+
+    grid-template-columns: 1fr 30%;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+
+    grid-template-areas:
+    "climbing-article climbing-img";
+
+    &-article {
+        grid-area: climbing-article;
+    }
+
+    &-img {
+        grid-area: climbing-img;
+    }
+}
+
+.fishing {
+    grid-area: fishing;
+    display:grid;
+    margin: 0 auto;
+
+    grid-template-columns: 30% 1fr;
+    grid-gap: 1rem;
+
+    grid-template-areas:
+    "fishing-img fishing-article";
+
+    &-img {
+        grid-area: fishing-img;
+    }
+    &-article {
+        grid-area: fishing-article;
+    }
+}
+
+.hunting {
+    grid-area: hunting;
+    display: grid;
+    margin: 0 auto;
+
+    grid-template-columns: 1fr 30%;
+    grid-gap: 1rem;
+
+    grid-template-areas:
+    "hunting-article hunting-img";
+    
+    &-img {
+        grid-area: hunting-img;
+    }
+    &-article {
+        grid-area: hunting-article;
     }
 }
