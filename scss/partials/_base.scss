@@ -11,10 +11,10 @@ body {
 }
 
 header {
-    background: url(../images/forest.jpg);
+    background: url(../images/header-img.jpg);
     background-size: cover;
     margin: 0;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
     text-align: center;
     
     nav {
@@ -25,12 +25,14 @@ header {
             padding: 0;
             border: 1px solid;
             border-color: white;
+            height: 2rem;
         }
 
         li {
             text-decoration: none;
             display: inline-block;
-            width: 5rem;
+            width: 15rem;
+            font-size: 2rem;
         }
 
         a {
@@ -45,11 +47,69 @@ header {
 .mainheader {
     font-family: 'Oswald', sans-serif;
     text-decoration: underline;
-    margin-top: 17rem;
+    margin-top: 7rem;
     font-size: 5rem;
 }
 
 .secondheader {
     font-family: 'Lobster', cursive;
     font-size: 3rem;
+}
+
+.arrow {
+    width: 7%;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.container {
+    &-header {
+        text-align: center;
+        background-color: grey;
+        margin-top: 0;
+    }
+}
+
+.intro {
+   padding: 2rem 5rem 0 5rem;
+}
+
+.hiking {
+    &-img {
+        background: url(../images/hiking.jpg);
+        background-size: 100%;
+    }
+    &-article {
+        background-color: grey;
+    }
+}
+
+.canoeing {
+    &-img {
+        background: url(../images/canoeing.jpg);
+        background-size: 100%;
+    }
+    &-article {
+        background-color: grey;
+    }
+}
+
+.camping {
+    &-img {
+        background: url(../images/camping.jpeg);
+        background-size: 100%;
+    }
+    &-article {
+        background-color: grey;
+    }
+}
+
+.climbing {
+    &-img {
+        background: url(../images/climbing.jpeg);
+        background-size: 100%;
+    }
+    &-article {
+        background-color: grey;
+    }
 }
