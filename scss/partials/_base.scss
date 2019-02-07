@@ -1,10 +1,10 @@
 html {
     scroll-behavior: smooth;
-    background: black;
+    background: #333;
 }
 
 body {
-    margin: 0;
+    margin: 0 2rem 0 2rem;
     padding: 0;
     color: white;
     font-family: 'Merriweather', serif;
@@ -16,45 +16,88 @@ header {
     margin: 0;
     padding-bottom: 4rem;
     text-align: center;
-    
-    nav {
-        ul {
-            background: rgba(0, 0, 0, 0.5);
-            height: 1.5rem;
-            margin: 0;
-            padding: 0;
-            border: 1px solid;
-            border-color: white;
-            height: 2rem;
-            position: sticky;
-        }
+    color: white;
 
-        li {
-            text-decoration: none;
-            display: inline-block;
-            width: 15rem;
-            font-size: 2rem;
-        }
-
-        a {
-            color:  white;
-            text-decoration: none;
-            
-        
-        }
-    }
+    /* The navigation menu */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #37523d;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #37523d;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
 }
 
+
 .mainheader {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Lobster', sans-serif;
     text-decoration: underline;
     margin-top: 7rem;
     font-size: 5rem;
 }
 
 .secondheader {
-    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
     font-size: 3rem;
+    padding-top: 0;
 }
 
 .arrow {
@@ -66,7 +109,7 @@ header {
 .container {
     &-header {
         text-align: center;
-        background-color: grey;
+        background-color: #37523d;
         margin-top: 0;
     }
 }
@@ -81,21 +124,29 @@ header {
 
 
 .hiking {
-    padding-bottom: 5rem;
     &-img {
         background: url(../images/hiking.jpg);
         background-size: 100%;
-        padding-bottom: 15rem;
-        border-radius: 3%;
+        background-repeat: no-repeat;
+        padding-bottom: 10rem;
+        height: 100%;
+    }
+    &-article {
+        padding-bottom: 10rem;
     }
 }
 
 .canoeing {
     &-img {
         background: url(../images/canoeing.jpg);
-        background-size: 100%;
-        padding-bottom: 15rem;
-        border-radius: 3%;
+        background-repeat: no-repeat;
+        padding-bottom: 10rem;
+        margin-top: 3rem;
+        height: 100%;
+    }
+    &-article {
+        padding-bottom: 10rem;
+        padding-top: 5rem;
     }
 }
 
