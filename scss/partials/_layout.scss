@@ -5,7 +5,6 @@
 
     grid-template-columns: 1;
     grid-template-rows: auto;
-    grid-gap: 1rem;
 
     grid-template-areas:
     "hiking"
@@ -16,14 +15,13 @@
     "hunting"
 }
 
-.hiking {
-    grid-area: hiking;
+.activity {
+    // grid-area: ;
     display: grid;
     margin: 0 auto;
 
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    grid-gap: 1rem;
+    grid-template-columns:50% 50%;
+    grid-template-rows:410px;
 
     grid-template-areas:
     "hiking-img hiking-article";
@@ -38,102 +36,58 @@
 }
 
 .canoeing {
-    grid-area: canoeing;
     display: grid;
-    margin: 0 auto;
-
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    grid-gap: 1rem;
+    grid-template-rows: 440px;
 
     grid-template-areas:
     "canoeing-article canoeing-img";
 
-    &-article {
-        grid-area: canoeing-article;
-    }
-
     &-img {
         grid-area: canoeing-img;
     }
-}
-
-.camping {
-    grid-area: camping;
-    display: grid;
-    margin: 0 auto;
-
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    grid-gap: 1rem;
-
-    grid-template-areas:
-    "camping-img camping-article";
-
-    &-img {
-        grid-area: camping-img;
-    }
-
     &-article {
-        grid-area: camping-article;
+        grid-area: canoeing-article;
     }
 }
 
 .climbing {
-    grid-area: climbing;
     display: grid;
-    margin: 0 auto;
-
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    grid-gap: 1rem;
+    grid-template-rows: 440px;
 
     grid-template-areas:
     "climbing-article climbing-img";
 
-    &-article {
-        grid-area: climbing-article;
-    }
-
     &-img {
         grid-area: climbing-img;
     }
-}
-
-.fishing {
-    grid-area: fishing;
-    display:grid;
-    margin: 0 auto;
-
-    grid-template-columns: 50% 50%;
-    grid-gap: 1rem;
-
-    grid-template-areas:
-    "fishing-img fishing-article";
-
-    &-img {
-        grid-area: fishing-img;
-    }
     &-article {
-        grid-area: fishing-article;
+        grid-area: climbing-article;
     }
 }
 
 .hunting {
-    grid-area: hunting;
     display: grid;
-    margin: 0 auto;
-
     grid-template-columns: 50% 50%;
-    grid-gap: 1rem;
+    grid-template-rows: 440px;
 
     grid-template-areas:
     "hunting-article hunting-img";
-    
+
     &-img {
         grid-area: hunting-img;
     }
     &-article {
         grid-area: hunting-article;
     }
+}
+
+// gallery layout starts here
+
+.gallery-container {
+    display: grid;
+    // grid-gap:0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5;
 }

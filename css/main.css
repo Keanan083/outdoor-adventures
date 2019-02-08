@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
 html {
   scroll-behavior: smooth;
   background: #333; }
 
 body {
-  margin: 0 2rem 0 2rem;
   padding: 0;
   color: white;
   font-family: 'Merriweather', serif; }
@@ -66,13 +68,14 @@ header {
     display: block; }
 
 .mainheader {
-  font-family: 'Lobster', sans-serif;
+  font-family: 'Anton', sans-serif;
   text-decoration: underline;
   margin-top: 7rem;
-  font-size: 5rem; }
+  font-size: 5rem;
+  font-weight: 300; }
 
 .secondheader {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Playfair Display', serif;
   font-size: 3rem;
   padding-top: 0; }
 
@@ -83,141 +86,250 @@ header {
 
 .container-header {
   text-align: center;
-  background-color: #37523d;
-  margin-top: 0; }
+  margin-top: 3rem; }
 
 .intro {
-  padding: 2rem 5rem 2rem 5rem; }
+  padding: 1rem 5rem 1rem 5rem;
+  text-align: center; }
 
 .f-intro {
   padding-bottom: 5rem; }
 
+article {
+  text-align: center;
+  padding: 0 2rem 0 2rem; }
+
 .hiking-img {
   background: url(../images/hiking.jpg);
   background-size: 100%;
-  background-repeat: no-repeat;
-  padding-bottom: 10rem;
-  height: 100%; }
-.hiking-article {
-  padding-bottom: 10rem; }
+  padding-bottom: 15rem; }
 
 .canoeing-img {
   background: url(../images/canoeing.jpg);
-  background-repeat: no-repeat;
-  padding-bottom: 10rem;
-  margin-top: 3rem;
-  height: 100%; }
-.canoeing-article {
-  padding-bottom: 10rem;
-  padding-top: 5rem; }
+  background-size: 100%;
+  padding-bottom: 15rem; }
 
 .camping-img {
   background: url(../images/camping.jpeg);
-  background-size: 100%;
-  padding-bottom: 15rem;
-  border-radius: 3%; }
+  background-size: 100%; }
 
 .climbing-img {
   background: url(../images/rock-climbing.jpg);
-  background-size: 100%;
-  padding-bottom: 15rem;
-  border-radius: 3%; }
+  background-size: 100%; }
 
 .fishing-img {
   background: url(../images/fishing.jpg);
   background-size: 100%;
-  padding-bottom: 15rem;
-  border-radius: 3%; }
+  background-repeat: no-repeat; }
 
 .hunting-img {
   background: url(../images/hunting.jpg);
-  padding-bottom: 15rem;
   background-size: 100%;
-  border-radius: 3%; }
+  background-repeat: no-repeat; }
 
+.navbar {
+  overflow: hidden;
+  background-color: #333; }
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden; }
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; }
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #37523d; }
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #37523d;
+  width: 100%;
+  z-index: 1; }
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none; }
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black; }
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block; }
+
+.contact-html {
+  background: url(../images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Merriweather', serif; }
+
+.join-us {
+  text-align: center;
+  font-size: 5rem;
+  text-decoration: underline;
+  color: white; }
+
+* {
+  box-sizing: border-box; }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; }
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block; }
+
+input[type=submit] {
+  background-color: #37523d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right; }
+
+input[type=submit]:hover {
+  background-color: white;
+  color: #333; }
+
+.container {
+  border-radius: 5px;
+  background-color: #333;
+  padding: 20px; }
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px; }
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px; }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+body {
+  margin: 0;
+  background: #131212; }
+
+div#masonry {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vw;
+  max-height: 800px;
+  font-size: 0; }
+
+div#masonry img {
+  width: 33.3%;
+  transition: .8s opacity; }
+
+div#masonry:hover img {
+  opacity: 0.3; }
+
+div#masonry:hover img:hover {
+  opacity: 1; }
+
+/* fallback for earlier versions of Firefox */
+@supports not (flex-wrap: wrap) {
+  div#masonry {
+    display: block; }
+
+  div#masonry img {
+    display: inline-block;
+    vertical-align: top; } }
 .grid-1 {
   display: grid;
   width: 100%;
   margin: 0 auto;
   grid-template-columns: 1;
   grid-template-rows: auto;
-  grid-gap: 1rem;
   grid-template-areas: "hiking" "canoeing" "camping" "climbing" "fishing" "hunting"; }
 
-.hiking {
-  grid-area: hiking;
+.activity {
   display: grid;
   margin: 0 auto;
   grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-  grid-gap: 1rem;
+  grid-template-rows: 410px;
   grid-template-areas: "hiking-img hiking-article"; }
-  .hiking-img {
+  .activity-img {
     grid-area: hiking-img; }
-  .hiking-article {
+  .activity-article {
     grid-area: hiking-article; }
 
 .canoeing {
-  grid-area: canoeing;
   display: grid;
-  margin: 0 auto;
   grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-  grid-gap: 1rem;
+  grid-template-rows: 440px;
   grid-template-areas: "canoeing-article canoeing-img"; }
-  .canoeing-article {
-    grid-area: canoeing-article; }
   .canoeing-img {
     grid-area: canoeing-img; }
-
-.camping {
-  grid-area: camping;
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-  grid-gap: 1rem;
-  grid-template-areas: "camping-img camping-article"; }
-  .camping-img {
-    grid-area: camping-img; }
-  .camping-article {
-    grid-area: camping-article; }
+  .canoeing-article {
+    grid-area: canoeing-article; }
 
 .climbing {
-  grid-area: climbing;
   display: grid;
-  margin: 0 auto;
   grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-  grid-gap: 1rem;
+  grid-template-rows: 440px;
   grid-template-areas: "climbing-article climbing-img"; }
-  .climbing-article {
-    grid-area: climbing-article; }
   .climbing-img {
     grid-area: climbing-img; }
-
-.fishing {
-  grid-area: fishing;
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: 50% 50%;
-  grid-gap: 1rem;
-  grid-template-areas: "fishing-img fishing-article"; }
-  .fishing-img {
-    grid-area: fishing-img; }
-  .fishing-article {
-    grid-area: fishing-article; }
+  .climbing-article {
+    grid-area: climbing-article; }
 
 .hunting {
-  grid-area: hunting;
   display: grid;
-  margin: 0 auto;
   grid-template-columns: 50% 50%;
-  grid-gap: 1rem;
+  grid-template-rows: 440px;
   grid-template-areas: "hunting-article hunting-img"; }
   .hunting-img {
     grid-area: hunting-img; }
   .hunting-article {
     grid-area: hunting-article; }
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5; }
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0; } }
 
 /*# sourceMappingURL=main.css.map */
