@@ -6,12 +6,13 @@
 - Create your base folder structure (css,images, js)
 
 ## Live Link
-- https://github.com/Keanan083/fonts_colours_challenge.html.git
+-  https://keanan083.github.io/outdoor-adventures/
 
 ## Prevalent Technologies Used
 
 - HTML
-- CSS
+- SASS
+- SCSS
 
 
 ### Other Technologies Used
@@ -37,7 +38,7 @@ Tools:
 
 ### Changelog
 
-2018-12-4:
+2019-2-8:
 - Base folders added
 - Readme Created
 - Live Link Created
