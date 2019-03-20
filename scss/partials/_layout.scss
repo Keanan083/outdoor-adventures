@@ -13,15 +13,16 @@
     "climbing"
     "fishing"
     "hunting"
+    "footer"
 }
 
 .activity {
-    // grid-area: ;
+    // grid-area: activity;
     display: grid;
     margin: 0 auto;
 
     grid-template-columns:50% 50%;
-    grid-template-rows:410px;
+    grid-template-rows: 24.625rem;
 
     grid-template-areas:
     "hiking-img hiking-article";
@@ -36,9 +37,10 @@
 }
 
 .canoeing {
+    // grid-area: canoeing;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 440px;
+    grid-template-rows: 25.5rem;
 
     grid-template-areas:
     "canoeing-article canoeing-img";
@@ -51,10 +53,17 @@
     }
 }
 
+.camping {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 23.5rem;
+}
+
 .climbing {
+    // grid-area: climbing;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 440px;
+    grid-template-rows: 25.5rem;
 
     grid-template-areas:
     "climbing-article climbing-img";
@@ -68,9 +77,10 @@
 }
 
 .hunting {
+    // grid-area: hunting;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 440px;
+    grid-template-rows: 27.5rem;
 
     grid-template-areas:
     "hunting-article hunting-img";
@@ -81,6 +91,10 @@
     &-article {
         grid-area: hunting-article;
     }
+}
+
+footer {
+    grid-area: footer;
 }
 
 // gallery layout starts here

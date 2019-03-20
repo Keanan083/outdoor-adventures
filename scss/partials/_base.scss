@@ -1,11 +1,16 @@
 html {
     scroll-behavior: smooth;
-    background: #333;
+    background-color: #f3f3f3;
 }
 
 body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+
+.index-body {
     padding: 0;
-    color: white;
+    color: black;
     font-family: 'Merriweather', serif;
 }
 
@@ -26,10 +31,10 @@ header {
   /* Navigation links */
   .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 1rem;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.875rem 1rem;
     text-decoration: none;
  }
   
@@ -41,11 +46,11 @@ header {
   
   /* Subnav button */
   .subnav .subnavbtn {
-    font-size: 16px; 
+    font-size: 1rem; 
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 0.875rem 1rem;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -107,6 +112,7 @@ header {
 }
 
 .container {
+    background: #f3f3f3;
     &-header {
         text-align: center;
         margin-top: 3rem;
@@ -114,13 +120,9 @@ header {
 }
 
 .intro {
-   padding: 1rem 5rem 1rem 5rem;
+   padding: 1rem 1rem 1rem 5rem;
    text-align: center;
 }
-
-.f-intro {
-    padding-bottom: 5rem;
-} 
 
 article {
     text-align: center;
@@ -177,7 +179,15 @@ article {
     } 
 }
 
-// contact page styling
+footer {
+    text-align: center;
+    padding: 1.625rem 0 2.625rem 0;
+}
+
+//*********************************************************************************************************************
+// CONTACT PAGE STYLING STARTS HERE
+//********************************************************************************************************************
+
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -186,10 +196,10 @@ article {
 /* Navigation links */
 .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 1rem;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.875rem 1rem;
     text-decoration: none;
 }
 
@@ -201,11 +211,11 @@ article {
 
 /* Subnav button */
 .subnav .subnavbtn {
-    font-size: 16px; 
+    font-size: 1rem; 
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 0.875rem 1rem;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -244,18 +254,20 @@ article {
     display: block;
 }
 
-.contact-html {
+.contact-body {
     background: url(../images/bg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Merriweather', serif;
+    color: white
 }
 
 .join-us {
     text-align: center;
     font-size: 5rem;
     text-decoration: underline;
-    color:  white;
+    color: #37523d;
+    font-weight: normal;
 }
 
 * {
@@ -264,23 +276,23 @@ article {
   
 input[type=text], select, textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 0.75rem;
+    border: 0.0625rem solid #333;
+    border-radius: 0.25rem;
     resize: vertical;
 }
   
 label {
-    padding: 12px 12px 12px 0;
+    padding: 0.75rem 0.75rem 0.75rem 0;
     display: inline-block;
 }
   
 input[type=submit] {
     background-color: #37523d;
     color: white;
-    padding: 12px 20px;
+    padding: 0.75rem 1.25rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: pointer;
     float: right;
 }
@@ -290,22 +302,22 @@ input[type=submit]:hover {
     color: #333;
 }
   
-.container {
-    border-radius: 5px;
-    background-color: #333;
-    padding: 20px;
+.contact-container {
+    border-radius: 0.3125rem;
+    background: #333;
+    padding: 1.25rem;
 }
   
 .col-25 {
     float: left;
     width: 25%;
-    margin-top: 6px;
+    margin-top: 0.375rem;
 }
   
 .col-75 {
     float: left;
     width: 75%;
-    margin-top: 6px;
+    margin-top: 0.375rem;
 }
   
 //Clear floats after the columns
@@ -313,36 +325,44 @@ input[type=submit]:hover {
     content: "";
     display: table;
     clear: both;
-  }
-
-//gallery styling starts here
-
-body { 
-    margin: 0; background: #131212;  
-} 
-div#masonry { 
-    display: flex; 
-    flex-direction: column; 
-    flex-wrap: wrap;
-    height: 100vw;
-    max-height: 800px;
-    font-size: 0;  
 }
-div#masonry img {  
-    width: 33.3%;
-    transition: .8s opacity;
-} 
 
-div#masonry:hover img { opacity: 0.3; }
-div#masonry:hover img:hover { opacity: 1; } 
+//*********************************************************************************************************************
+//GALLERY STYLING STARTS HERE
+//*********************************************************************************************************************
 
-/* fallback for earlier versions of Firefox */
 
-@supports not (flex-wrap: wrap) {
-    div#masonry { display: block; }
-    div#masonry img {  
-    display: inline-block;
-    vertical-align: top;
-    }
+// * {
+//     box-sizing: border-box;
+// }
+
+.gallery-body {
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 2rem;
+}
+
+.row {
+    display: -ms-flexbox; //IE10
+    display: flex;
+    -ms-flex-wrap: wrap; //IE10
+    flex-wrap: wrap;
+    padding: 0 0.25rem;
+}
+
+//Create four equal columns that sits next to each other
+.column {
+    -ms-flex: 25%; //IE10
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 0.5rem;
+    vertical-align: middle;
 }
 
