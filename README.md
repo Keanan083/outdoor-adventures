@@ -13,6 +13,7 @@
 - HTML
 - SASS
 - SCSS
+- JavaScript
 
 
 ### Other Technologies Used
