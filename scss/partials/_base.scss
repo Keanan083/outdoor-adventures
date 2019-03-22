@@ -120,7 +120,7 @@ header {
 }
 
 .intro {
-   padding: 1rem 1rem 1rem 5rem;
+   padding: 1rem 1rem 5rem 1rem;
    text-align: center;
 }
 
@@ -177,6 +177,18 @@ article {
         background-size: 100%;
         background-repeat: no-repeat;
     } 
+}
+
+button {
+    background: rgba(0,0,0,0);
+    border-style: solid;
+    border-color: #333;
+    margin-top: 2rem;
+    
+    .readmore {
+        text-decoration: none;
+        color: #000
+    }
 }
 
 footer {
@@ -266,7 +278,7 @@ footer {
     text-align: center;
     font-size: 5rem;
     text-decoration: underline;
-    color: #37523d;
+    color: #f3f3f3;
     font-weight: normal;
 }
 
